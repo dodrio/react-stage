@@ -1,5 +1,5 @@
 {
-  "name": "react-stage",
+  "name": "@m31271n/react-stage",
   "version": "0.0.0",
   "description": "Stage for HTML5 application.",
   "repository": "m31271n/react-stage",
@@ -22,7 +22,7 @@
       "npm run code-quality && rm -rf dist && npm run build && npm publish"
   },
   "files": ["dist"],
-  "keywords": [""],
+  "keywords": ["react", "component", "stage", "html5"],
   "dependencies": {
     "prop-types": "^15.6.0"
   },
