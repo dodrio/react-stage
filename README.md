@@ -11,7 +11,7 @@
 ## Install
 
 ```
-$ npm install react-stage
+$ npm install @m31271n/react-stage
 ```
 
 ## Usage
