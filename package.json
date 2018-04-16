@@ -1,6 +1,6 @@
 {
   "name": "@m31271n/react-stage",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Stage for HTML5 application.",
   "repository": "m31271n/react-stage",
   "main": "./dist/index.js",
