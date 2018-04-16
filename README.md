@@ -18,7 +18,7 @@ $ npm install @m31271n/react-stage
 
 ```jsx
 import React from 'react';
-import Stage from 'react-stage';
+import Stage from '@m31271n/react-stage';
 
 class App extends React.Component {
   render() {
