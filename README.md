@@ -18,14 +18,14 @@ $ npm install @m31271n/react-stage
 
 ```jsx
 import React from 'react';
-import Stage from '@m31271n/react-stage';
+import { StageToggle, Stage } from '@m31271n/react-stage';
 
 class App extends React.Component {
   render() {
     return (
-      <Stage type="render" show={true}>
-        Hello, world.
-      </Stage>
+      <StageToggle condition={true}>
+        <Stage>Hello, World.</Stage>
+      </StageToggle>
     );
   }
 }
@@ -33,7 +33,12 @@ class App extends React.Component {
 
 ## Available Props
 
-| props  | values                   | description                                                                                                                         |
-| ------ | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `type` | `"render"` / `"display"` | `"render"` controls stage via adding / removing entrie DOM element; `"display"` controls stage via modifying styles of DOM element. |
-| `show` | `true` / `false`         | show stage or not.                                                                                                                  |
+### `StageToggle`
+
+| props       | values           | description          |
+| ----------- | ---------------- | -------------------- |
+| `condition` | `true` / `false` | render stage or not. |
+
+### `Stage`
+
+None.
