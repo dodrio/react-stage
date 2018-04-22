@@ -25,11 +25,11 @@ const defaultStyle = {
 };
 
 export const Stage = props => {
-  let { children, className } = props;
+  let { children, className, ...otherProps } = props;
   className = className ? `stage ${className}` : 'stage';
 
   return (
-    <section className={className} style={defaultStyle}>
+    <section className={className} style={defaultStyle} {...otherProps}>
       {children}
     </section>
   );
