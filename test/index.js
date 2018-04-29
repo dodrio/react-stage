@@ -14,8 +14,8 @@ test('condition = true', t => {
       <Stage />
     </StageToggle>
   );
-  const stage = wrapper.find('.stage');
-  t.is(stage.is('.stage'), true);
+  const stage = wrapper.find('.react-stage');
+  t.true(stage.is('.react-stage'));
 });
 
 test('condition = false', t => {
@@ -24,6 +24,6 @@ test('condition = false', t => {
       <Stage />
     </StageToggle>
   );
-  const stage = wrapper.find('.stage');
+  const stage = wrapper.find('.react-stage');
   t.is(stage.length, 0);
 });
