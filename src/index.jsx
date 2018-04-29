@@ -27,11 +27,17 @@ const defaultStyle = {
 };
 
 export const Stage = props => {
-  let { children, className, ...otherProps } = props;
-  className = className ? `stage ${className}` : 'stage';
+  const { children, className, style, ...otherProps } = props;
+  const concatedClassName = className
+    ? `react-stage ${className}`
+    : 'react-stage';
 
   return (
-    <section className={className} style={defaultStyle} {...otherProps}>
+    <section
+      className={concatedClassName}
+      style={{ ...defaultStyle, ...style }}
+      {...otherProps}
+    >
       {children}
     </section>
   );
